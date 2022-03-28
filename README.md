@@ -1,2 +1,2 @@
-# Mafia
+# Mafia.github.io
 Dont use
