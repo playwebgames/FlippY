@@ -3,7 +3,7 @@ timeTag = document.querySelector(".time b"),
 flipsTag = document.querySelector(".flips b"),
 refreshBtn = document.querySelector(".details button");
 
-let maxTime = 25;
+let maxTime = 20;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
@@ -93,13 +93,3 @@ refreshBtn.addEventListener("click", shuffleCard);
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
-
-
-
-function openNav() {
-  document.getElementById("myNav").style.width = "55%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}

@@ -13,6 +13,7 @@ body{
   user-select: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: #002602;
 }
@@ -21,9 +22,9 @@ body{
   background: #5c7a00;
 }
 .wrapper{
-  padding: 35px;
+  padding: 25px;
   background: #556e02;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 10px 30px rgba(255, 242, 0, 0.26);
 }
 .cards, .card, .view, .details, p{
@@ -171,74 +172,3 @@ body{
     background: #6563ff;
   }
 }
-
-
-
-
-
-
-
-
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  box-shadow: 0 5px 50px rgba(0, 0, 0);
-  background-color: rgba(0,63,0, 0.8);
-  overflow-x: hidden;
-  transition: 0.5s;
-  border-radius: 30px;
-
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;   /*-----------------------------------------------------------------*/
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: rgb(169,213,0) ;
-  display: block;
-  transition: 0.3s;
-  text-shadow: 2px 2px 2px #000;
-  transition: 0.3s ease;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: lightcyan; 
-  font-size: 46px;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 70px;
-  right: 135px;
-  font-size: 60px;
-  color: lime;
-  transition: 0.2s ease;
-}
-
-.overlay .closebtn:hover{
-  color: red;
-  font-size: 79px;
-  top: 65px;
-  right: 125px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
